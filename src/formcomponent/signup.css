@@ -4,15 +4,18 @@
     box-sizing: border-box;
 }
 
-#signup-button
+#signup-form
 {
-    margin-left: 40%;
+   
+    margin: 0 auto;
+    display: block;
+   
 }
 
 #formformat
 {
-    border:  2px solid slateblue;
-    width: 51%;
+    border:  2px solid #e4ab6a;
+    width: 45%;
     margin-top: 13%;
     margin-left: 25%;
     background: #fed7aa;
@@ -24,42 +27,21 @@
     border-radius:  37px;
     
 }
-
-/* .loginbutton
-{
-    margin-top: 2%;
-} */
 .inline.field
 {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#email-label
+.input-pass-icon
 {
-    float: left;
-    margin-left: 20%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    
 }
-
-
-.ui.right.pointing.red.basic.label
-{
-float: left;
-}
-#email-input
-{
-    width:42%
-}
-
-#password-input
-{
-    margin-left: 4%;
-}
-.ui.inverted.violet.button
-{
-    margin-left:1%;
-
-}
-.button-center
+.button-account
 {
     text-align: center;
     margin: 2%;
@@ -71,10 +53,15 @@ float: left;
 }
 #submit-login
 {
-    margin-left: 42%;
+    margin: 0 auto;
+    display: block;
 }
 .err-msg
 {
     color: red;
     font-size: 15px;
+}
+#show-off
+{
+    margin:1%
 }

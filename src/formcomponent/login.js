@@ -4,7 +4,9 @@ import { useUserAuth } from "../context/UserAuthContext";
 import "./login.css";
 
 function Login() {
-  // { email, setEmail, password, setPassword, error, setError }
+  {
+    // email, setEmail, password, setPassword, error, setError;
+  }
   // intial state of user email and password
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -16,12 +18,10 @@ function Login() {
 
   // handlesubmit functionlity
   const handlesubmit = async (e) => {
-    console.log("tygujhjhh");
     e.preventDefault();
     setError("");
     try {
       await logIn(email, password);
-
       navigate("/home");
     } catch (err) {
       setError(err.message);

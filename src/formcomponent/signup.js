@@ -21,7 +21,7 @@ function Signup({ email, setEmail, password, setPassword, error, setError }) {
       // alert(err.message);
     }
   };
-
+  // prop types
   // password show and hide functionality
   const [passwordshown, setPasswordshown] = useState(false);
   const togglepassword = () => {
@@ -31,7 +31,7 @@ function Signup({ email, setEmail, password, setPassword, error, setError }) {
   return (
     <>
       <form id="formformat" className="ui fluid form" onSubmit={handlesubmit}>
-        <button id="signup-button" className="ui primary button">
+        <button id="signup-form" className="ui primary button">
           SignUp Form
         </button>
         <div className="ui divider"></div>
@@ -39,42 +39,37 @@ function Signup({ email, setEmail, password, setPassword, error, setError }) {
         <div className="ui divider"></div>
         <div className="inline field">
           <div id="email-label" className="ui right pointing red basic label">
-            That Email is taken!
+            Enter Email:
           </div>
           <input
             id="email-input"
             type="email"
             placeholder="Email"
             required
-            // value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="ui divider"></div>
         <div className="inline field">
-          <div className="ui right pointing red basic label">
-            Your password must be 6 characters or more
+          <div id="pass-label" className="ui right pointing red basic label">
+            Enter Password:
           </div>
-          <input
-            id="password-input"
-            type={passwordshown ? "text" : "password"}
-            required
-            // value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button
-            className="ui inverted violet button"
-            onClick={togglepassword}
-          >
-            <i className="eye icon"></i>Show
-          </button>
+          <div className="input-pass-icon">
+            <input
+              id="password-input"
+              type={passwordshown ? "text" : "password"}
+              required
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <i id="show-off" className="eye icon" onClick={togglepassword}></i>
+          </div>
         </div>
         <div className="ui divider"></div>
-        <button id="submit-login" className="ui inverted purple button">
+        <button id="submit-login" className="ui inverted blue button">
           Sign Up
         </button>
         <div className="ui divider"></div>
-        <div className="button-center">
+        <div className="button-account">
           Already have an account ?..
           <span className="sign-in">
             <Link to="/login"> Log In</Link>

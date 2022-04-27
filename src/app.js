@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import PropTypes from "prop-types";
 import Signup from "./formcomponent/signup";
 import Login from "./formcomponent/login";
 import "./formcomponent/signup.css";
@@ -12,6 +13,16 @@ function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+
+  // props-types
+  // App.PropTypes={
+  //   email : PropTypes.isRequired,
+  //   setEmail : PropTypes.isRequired,
+  //   password: PropTypes.number,
+  //   setPassword: PropTypes.number,
+  //   error : PropTypes.string,
+  //   setError : PropTypes.string
+  // }
 
   return (
     <>

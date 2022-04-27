@@ -7,6 +7,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase";
 
+// createcontext ............
 const Authdata = createContext();
 
 export function UserAuthdata({ children }) {
@@ -21,13 +22,12 @@ export function UserAuthdata({ children }) {
   function logOut() {
     return signOut(auth);
   }
-
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
     });
     return () => {
-      unsubscribe();
+      unsubscribe(); //it's return for component did unmount
     };
   }, []);
   return (
