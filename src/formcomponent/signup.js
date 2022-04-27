@@ -31,14 +31,12 @@ function Signup({ email, setEmail, password, setPassword, error, setError }) {
   return (
     <>
       <form id="formformat" className="ui fluid form" onSubmit={handlesubmit}>
-        <button id="signup-form" className="ui primary button">
-          SignUp Form
-        </button>
+        <h1 className="heading-form">SignUp Form</h1>
         <div className="ui divider"></div>
         <p className="err-msg">{error}</p>
         <div className="ui divider"></div>
         <div className="inline field">
-          <div id="email-label" className="ui right pointing red basic label">
+          <div id="email-label" className="ui right pointing  label">
             Enter Email:
           </div>
           <input
@@ -51,7 +49,7 @@ function Signup({ email, setEmail, password, setPassword, error, setError }) {
         </div>
         <div className="ui divider"></div>
         <div className="inline field">
-          <div id="pass-label" className="ui right pointing red basic label">
+          <div id="pass-label" className="ui right pointing label">
             Enter Password:
           </div>
           <div className="input-pass-icon">
@@ -65,8 +63,8 @@ function Signup({ email, setEmail, password, setPassword, error, setError }) {
           </div>
         </div>
         <div className="ui divider"></div>
-        <button id="submit-login" className="ui inverted blue button">
-          Sign Up
+        <button id="signup-form" className="ui primary button">
+          SignUp
         </button>
         <div className="ui divider"></div>
         <div className="button-account">

@@ -6,23 +6,21 @@
 
 #signup-form
 {
-   
     margin: 0 auto;
     display: block;
-   
+}
+.heading-form
+{
+    text-align: center;
 }
 
 #formformat
 {
-    border:  2px solid #e4ab6a;
-    width: 45%;
+    border:  2px solid #ecd4b8;
+    width: 35%;
     margin-top: 13%;
-    margin-left: 25%;
-    background: #fed7aa;
-
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-left: 27%;
+    background: #f1e6d8;
     padding: 1%;
     border-radius:  37px;
     
