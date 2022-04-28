@@ -35,7 +35,6 @@
 .input-pass-icon
 {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     
 }
